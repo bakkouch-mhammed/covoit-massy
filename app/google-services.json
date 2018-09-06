@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "152216522956",
+    "firebase_url": "https://covoit-massy.firebaseio.com",
+    "project_id": "covoit-massy",
+    "storage_bucket": "covoit-massy.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:152216522956:android:ab0fee29d289164e",
+        "android_client_info": {
+          "package_name": "fr.massy.covoit.covoit_massy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "152216522956-0p1knlscpki36jjfmugvvkq9675tbp48.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "fr.massy.covoit.covoit_massy",
+            "certificate_hash": "a7a820055e98dbeb7ac7171793dc7f688a43700c"
+          }
+        },
+        {
+          "client_id": "152216522956-b4qsbn368l9nb0m88ojkb1aqur644dou.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3Y-N3frBQNfKxmM9CiMnjE34SWBEK-QE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "152216522956-b4qsbn368l9nb0m88ojkb1aqur644dou.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
