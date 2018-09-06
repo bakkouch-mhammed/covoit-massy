@@ -2,13 +2,17 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
+    <ListView
+        android:id="@+id/list_rides"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:text="TEST"
+        android:text="Covoits"
         android:textAlignment="center"
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
 

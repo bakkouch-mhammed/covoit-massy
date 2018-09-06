@@ -10,19 +10,25 @@ public class Ride {
     private Time startTime;
     private int nbSeats;
     private ArrayList<User> passengers;
-    private boolean isFull;
+    private long isFull;
     private String startLocation;
     private String endLocation;
     private String comments;
+    private User driver;
 
-    public Ride(Time startTime, int nbSeats) {
+    public Ride(User driver, Time startTime, int nbSeats) {
         this.startTime = startTime;
         this.nbSeats = nbSeats;
+        this.passengers = new ArrayList<User>();
+        this.isFull = 0L;
+        this.driver=driver;
+        this.startLocation="Massy";
+        this.endLocation="Centrale";
     }
 
 
     public void addPassenger(User user) {
-        if (isFull) {
+        if (isFull == 1L) {
             try {
                 throw new RideException("full");
             } catch (RideException e) {
@@ -32,7 +38,7 @@ public class Ride {
         else {
             passengers.add(user);
             if (passengers.size() == nbSeats) {
-                isFull = true;
+                isFull = 1L;
             }
         }
     }
@@ -65,12 +71,20 @@ public class Ride {
         this.passengers = passengers;
     }
 
-    public boolean isFull() {
+    public long isFull() {
         return isFull;
     }
 
-    public void setFull(boolean full) {
-        isFull = full;
+    public void setFull(long foo) {
+        isFull = foo;
+    }
+
+    public void setDriver(User driver) {
+        this.driver = driver;
+    }
+
+    public User getDriver() {
+        return driver;
     }
 
     public String getStartLocation() {

@@ -7,9 +7,11 @@ import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 
+import fr.massy.covoit.covoit_massy.fragments.HomeFragment;
+import fr.massy.covoit.covoit_massy.fragments.ProfilFragment;
+import fr.massy.covoit.covoit_massy.fragments.RidesFragment;
+
 public class UserActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener{
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
