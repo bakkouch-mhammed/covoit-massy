@@ -81,8 +81,8 @@ public class SignUpActivity extends AppCompatActivity {
                         current_user_db.child("name").setValue(name);
                         current_user_db.child("phone").setValue(phone);
                         current_user_db.child("email").setValue(email);
-                        current_user_db.child("email").setValue(fil);
-                        current_user_db.child("email").setValue(opt);
+                        current_user_db.child("fil").setValue(fil);
+                        current_user_db.child("opt").setValue(opt);
                         mProgress.dismiss();
 
                         Intent mainIntent = new Intent(SignUpActivity.this, MainActivity.class);

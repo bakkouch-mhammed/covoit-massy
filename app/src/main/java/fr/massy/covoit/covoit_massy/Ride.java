@@ -1,8 +1,9 @@
 package fr.massy.covoit.covoit_massy;
 
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import java.util.*
+import java.util.ArrayList;
+
+import exceptions.RideException;
+
 
 public class Ride {
 
@@ -20,20 +21,24 @@ public class Ride {
     }
 
 
-    public void addPassenger(String email) {
+    public void addPassenger(User user) {
         if (isFull) {
-            throw new RideException("full");
+            try {
+                throw new RideException("full");
+            } catch (RideException e) {
+                e.printStackTrace();
+            }
         }
         else {
-            passengers.add(email);
+            passengers.add(user);
             if (passengers.size() == nbSeats) {
-                isFull = True;
+                isFull = true;
             }
         }
     }
 
     public void removePassenger(String email) {
-        while(a.remove(email)) {};
+        while(passengers.remove(email)) {};
     }
 
     public Time getStartTime() {

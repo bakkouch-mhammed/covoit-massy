@@ -14,7 +14,7 @@ public class UserActivity extends AppCompatActivity implements BottomNavigationV
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user);
-        loadFragment(new AccueilFragment());
+        loadFragment(new HomeFragment());
         BottomNavigationView menu_nav = findViewById(R.id.Navbot);
         menu_nav.setOnNavigationItemSelectedListener(this);
     }
@@ -26,14 +26,11 @@ public class UserActivity extends AppCompatActivity implements BottomNavigationV
 
         switch (item.getItemId()) {
             case R.id.navigation_accueil:
-                fragment = new AccueilFragment();
+                fragment = new HomeFragment();
                 break;
 
             case R.id.navigation_panier:
-                fragment = new PanierFragment();
-                break;
-            case R.id.navigation_commandes:
-                fragment = new CommandesFragment();
+                fragment = new RidesFragment();
                 break;
 
             case R.id.navigation_profil:
